@@ -66,49 +66,90 @@
     .piano-keys span {
         position: absolute;
         bottom: 50%;
-        width: 100%;
+        width: 30%;
         justify-content: center;
         text-align: center;
-        font-size: 1.13rem;
+        padding: 0px 0.2rem; 
+    }
+
+    .piano-keys .white span{
+       top: 75%;
     }
 
 }
 
 /*#LANDSCAPE max-width: 768px*/
 @media screen and (max-width: 768px) and (orientation: landscape) {
+    .container{
+        width: 85vw;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    header {
+        max-width: 85vw;
+        overflow: hidden;
+    }
+
+    header .volume-slider, .keys-check {
+        flex-direction: column;
+    }
+
+    header h2 {
+        font-size: 1rem;
+    }
+
+    header .column span {
+        font-size: 0.8rem;
+        margin: 0;
+    }
+
+    .volume-slider input {
+        width: 6rem;
+    }
+
+
     .piano-keys {
-        max-width: 80vw;
-        padding: 2rem;
-        margin: 0px 2rem;
+        max-width: 75vw;
+        margin: 0 auto;
+        padding: 0;
+        margin-top: 2.5rem;
+    
+    }
+    
+    .piano-keys .key {
+        cursor: pointer;
+        color: #a2a2a2;
+        user-select: none;
+        position: relative;
+        text-transform: uppercase;
+    }
+
+    .piano-keys .white {
+        width: 4.37rem;
+        height: 8.75rem;
+        margin-top: 1.5rem;
+    }
+
+    .piano-keys .black {
+        width: 2.75rem;
+        height: 4.37rem;
+        z-index: 2;
+        top: 25px;
+        margin: 0px -1.375rem;
+    }
+
+    .piano-keys span {
+        position: absolute;
+        bottom: 50%;
+        width: 30%;
+        justify-content: center;
+        text-align: center;
+        padding: 0px 0.2rem; 
+    }
+
+    .piano-keys .white span{
+       top: 75%;
     }
 }
 
-/*===================================== 📔 TABLETS ==========================================*/
-/*#PORTRAIT  min-width: 834px and max-width: 1023px*/
-
-@media screen and (min-width: 834px) and (max-width: 1023px) and (orientation: portrait) {}
-
-/*#LANDSCAPE min-width: 1024px and max-width: 1279px*/
-
-@media (min-width: 1024px) and (max-width: 1279px) and (orientation: landscape) {}
-
-/*===================================== 💻 LAPTOP ==========================================*/
-/*#SMALL min-width: 1280px and max-width: 1366px*/
-
-@media screen and (min-width: 1280px) and (max-width: 1366px) {}
-
-/*#LARGE  min-width: 1367px and max-width: 1919px*/
-
-@media screen and (min-width: 1367px) and (max-width: 1919px) {}
-
-/*================================= 🖥 DESKTOP  =======================================*/
-
-/*#PORTRAIT - min-width: 1920px*/
-
-@media screen and (min-width: 1920px) and (orientation: portrait) {}
-
-/*#LANDSCAPE - min-width: 1920px*/
-
-@media screen and (min-width: 1920px) and (orientation: landscape) {}
-
-/*================================= DESKTOP EXTRA LARGE SCRENS  =======================================*/
